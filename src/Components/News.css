@@ -1,0 +1,42 @@
+.news-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+
+  }
+  
+  .news-item {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  .news-image {
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .news-content {
+    flex: 1; /* Take remaining space */
+  }
+  
+  .news-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+
+  }
+
+  h2 {
+    color:#fff;
+    margin: 30px 20px;
+  }
+  
+  .news-item .news-date {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  

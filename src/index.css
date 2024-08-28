@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Protest+Revolution&display=swap');
+
+
+
+/* Other styles */
+
+
+:root {
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;
+  
+  --color-golden: #DCCA87;
+  --color-black: #0C0C0C;
+  --color-gray: #545454;
+  --color-crimson: #F5EFDB;
+  --color-grey: #AAAAAA;
+  --color-white: #FFFFFF;
+}
+
+/* Set the global background and text */
+html, body {
+  background-color:#000;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+button {
+  padding: 10px 20px;
+  font-size: 10px;
+  background-color: transparent;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+
+}
+button:hover {
+  background-color: #FD2B3B;
+}
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes moveLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-5px); }
+}
+

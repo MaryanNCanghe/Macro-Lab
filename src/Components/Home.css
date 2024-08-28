@@ -1,0 +1,51 @@
+/* src/Components/Home.css */
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Ajuste conforme necessário */
+  padding: 20px ;
+}
+
+.welcome-text {
+  max-width: 100%;
+  text-align: center;
+}
+
+.welcome-text h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color:#FFF;
+}
+
+.welcome-text p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color:#FFF;
+}
+
+.info-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.info-button:hover{
+   background-color: #FD2B3B;
+}
+
+.image-container {
+  flex: 1;
+  background-image: url('path/to/your/image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
+  

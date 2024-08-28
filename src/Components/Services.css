@@ -1,0 +1,48 @@
+.service {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px auto; /* Define margens verticais menores e centraliza horizontalmente */
+  max-width: 900px;   /* Define uma largura máxima para evitar que o elemento ocupe toda a largura da tela */
+  padding: 20px;      /* Adiciona algum preenchimento interno para melhorar a aparência */
+}
+  
+  .service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .service-content {
+    padding: 20px;
+  }
+  
+  .service-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .service-content p {
+    line-height: 1.6;
+  }
+  
+  .service-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .service-content button:hover {
+    background-color: #0056b3;
+  }
+  

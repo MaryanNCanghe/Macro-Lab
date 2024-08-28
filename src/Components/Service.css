@@ -1,0 +1,25 @@
+.service-content{
+    display:flex;
+    align-items:space-between;
+    
+}
+
+.service-content p{
+    color:#fff;
+}
+
+.service-content img{
+
+
+}
+
+.service-header button{
+    padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}

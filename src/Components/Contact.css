@@ -1,0 +1,107 @@
+.contact-container {
+    margin: 40px 150px;
+    padding: 20px;
+    background-color: #00C0A3;
+    box-shadow: 0 0 10px #00C0A3, 0 0 20px #00C0A3, 0 0 30px #00C0A3, 0 0 40px #00C0A3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items:center;
+  }
+  
+  .contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#000;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #FD2B3B;
+  }
+  
+  .contact-item{
+    margin-top:solid 1px grey;
+    display:flex;
+    padding-left:5px;
+    margin-top:20px;
+  }
+  .contact-item p{
+   padding-left:5px;
+  }
+
+  form select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: px;
+    padding: 20px;
+    color: #333;
+    cursor: pointer;
+  }
+
+
+  .success-message {
+    color: green;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .contact-info {
+    margin: 60px 0px;
+    
+
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item .icon {
+    margin-right: 10px;
+  }
+  
+
+  @media (max-width: 768px) {
+
+    .contact-container {
+      max-width: 600px;
+      margin: 40px 10px;
+    }
+  }
