@@ -1,42 +1,28 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import './Contact.css'; // Optional: CSS for styling
+import './Contact.css'; 
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '', // New state for phone number
-    appointment: '', // New state for date and time
-    reason: '', // New state for select list
+    phone: '',
+    appointment: '',
+    reason: '',
     message: ''
   });
-
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Implement your logic for form submission (e.g., sending data to backend)
-    console.log(formData); // Example: Log the form data
+    // Handle form submission logic 
     setFormSubmitted(true);
-    // Reset form after submission
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      appointment: '', // Reset date and time input
-      reason: '', // Reset select list
-      message: ''
-    });
   };
 
   return (
@@ -45,7 +31,11 @@ const Contact = () => {
       {formSubmitted ? (
         <p className="success-message">Thank you for your message. We will get back to you soon!</p>
       ) : (
-        <form onSubmit={handleSubmit}>
+        <form
+          action="https://formsubmit.co/mariadufna@email.com" 
+          method="POST"
+         
+        >
           <label>
             Name:
             <input
@@ -133,15 +123,14 @@ const Contact = () => {
           <FontAwesomeIcon icon={faPhone} className="icon" />
           <p>+0244 366 143 </p>
         </div>
-       
         <div className="contact-item">
           <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
           <p>123 Street, City, Ghana</p>
         </div>
-       <div>
-        <p>Monday - Saturday</p>
-        <p>7:30Am - 17:30 Pm</p>
-       </div>
+        <div className="contact-item">
+          <p>Monday - Saturday</p>
+          <p>7:30 AM - 5:30 PM</p>
+        </div>
       </div>
     </div>
   );
